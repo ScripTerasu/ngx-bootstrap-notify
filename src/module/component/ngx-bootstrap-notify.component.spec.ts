@@ -2,22 +2,22 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { LibComponent } from './lib.component';
+import { NgxBootstrapNotifyComponent } from './ngx-bootstrap-notify.component';
 
 describe('LibComponent', function () {
   let de: DebugElement;
-  let comp: LibComponent;
-  let fixture: ComponentFixture<LibComponent>;
+  let comp: NgxBootstrapNotifyComponent;
+  let fixture: ComponentFixture<NgxBootstrapNotifyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LibComponent]
+      declarations: [NgxBootstrapNotifyComponent]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LibComponent);
+    fixture = TestBed.createComponent(NgxBootstrapNotifyComponent);
     comp = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('p.description'));
   });
