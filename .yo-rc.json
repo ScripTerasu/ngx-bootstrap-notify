@@ -1,0 +1,40 @@
+{
+  "generator-ngx-library": {
+    "version": "6.2.1",
+    "authorName": "Sebastian Almendra",
+    "authorEmail": "script.seba@gmail.com",
+    "githubUsername": "ScripTerasu",
+    "githubRepoName": "ngx-bootstrap-notify",
+    "projectName": "ngx-bootstrap-notify",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Angular library built with ❤ using ngx-library yeoman generator.",
+    "projectKeywords": [
+      "ng",
+      "angular",
+      "library"
+    ],
+    "ngVersion": "6.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "otherDependencies": [
+      "bootstrap-notify"
+    ],
+    "additionalPackageFiles": [],
+    "dependenciesRange": "^",
+    "ngPrefix": "ngx",
+    "testingFramework": "karma",
+    "useGreenkeeper": false,
+    "useCompodoc": false,
+    "enforceNgGitCommitMsg": true,
+    "exclusions": [
+      "demo/proxy.conf.json",
+      "demo/src/jestGlobalMocks.ts",
+      "demo/src/setupJest.ts",
+      "config/jestGlobalMocks.ts",
+      "config/setupJest.ts"
+    ],
+    "deleteExclusions": []
+  }
+}
