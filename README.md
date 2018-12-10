@@ -41,27 +41,27 @@ Once installed you need to import the main module:
 import { LibModule } from 'ngx-bootstrap-notify';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice ` LibModule .forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice ` NgxBootstrapNotifyModule .forRoot()`):
 ```js
 import { LibModule } from 'ngx-bootstrap-notify';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [LibModule.forRoot(), ...],  
+  imports: [NgxBootstrapNotifyModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import ` LibModule `:
+Other modules in your application can simply import ` NgxBootstrapNotifyModule `:
 
 ```js
-import { LibModule } from 'ngx-bootstrap-notify';
+import { NgxBootstrapNotifyModule } from 'ngx-bootstrap-notify';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [LibModule, ...], 
+  imports: [NgxBootstrapNotifyModule, ...], 
 })
 export class OtherModule {
 }

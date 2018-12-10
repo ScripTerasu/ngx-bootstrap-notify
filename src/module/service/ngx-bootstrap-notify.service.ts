@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
+import { INotifySettings } from '../models/notify-settings.model';
+import { INotifyOptions } from '../models/notify-options.model';
 
 @Injectable()
 export class NgxBootstrapNotifyService {
+  getDefaultsNotifyOptions(): INotifyOptions {
+    return <INotifyOptions>{ message: '' };
+  }
+
   constructor() { }
-  sayHello(name?: String) {
-    return `Hello ${name || 'Stanger'}!`;
+
+  getDefaultsNotifySettings(): INotifySettings {
+    return <INotifySettings>{};
   }
 }
